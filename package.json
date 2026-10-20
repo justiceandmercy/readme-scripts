@@ -1,0 +1,23 @@
+{
+  "name": "readme-scripts",
+  "version": "1.0.0",
+  "description": "Audit README.md against package.json scripts for undocumented or stale references.",
+  "bin": {
+    "readme-scripts": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node test/audit.test.js",
+    "check": "node --check src/audit.js && node --check src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "readme",
+    "documentation",
+    "npm",
+    "cli",
+    "audit"
+  ],
+  "license": "MIT"
+}
